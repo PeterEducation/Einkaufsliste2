@@ -81,13 +81,13 @@ public class RegisterUserActivity extends AppCompatActivity implements View.OnCl
 
         if (email.isEmpty()) {
             editTextEmail.setError("E-Mail Addresse wird benötigt!");
-            editTextFullName.requestFocus();
+            editTextEmail.requestFocus();
             return;
         }
 
         if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()) {
             editTextEmail.setError("E-Mail Adresse ist nicht valide!");
-            editTextFullName.requestFocus();
+            editTextEmail.requestFocus();
             return;
         }
 
@@ -120,7 +120,7 @@ public class RegisterUserActivity extends AppCompatActivity implements View.OnCl
                                     if (task.isSuccessful())
                                     {
                                         Toast.makeText(RegisterUserActivity.this, "Nutzer wurde erfolgreich registriert!", Toast.LENGTH_LONG).show();
-                                        progressBar.setVisibility(View.VISIBLE);
+                                        progressBar.setVisibility(View.GONE);
                                     }
                                     else
                                     {
