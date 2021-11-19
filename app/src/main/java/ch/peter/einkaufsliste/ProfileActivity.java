@@ -26,6 +26,7 @@ public class ProfileActivity extends AppCompatActivity {
     private String userID;
 
     private Button logout;
+    private Button goToList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +34,14 @@ public class ProfileActivity extends AppCompatActivity {
         setContentView(R.layout.activity_profile);
 
         logout = (Button) findViewById(R.id.signOut);
+        goToList = (Button) findViewById(R.id.goToList);
+
+        goToList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ProfileActivity.this, ShoppingPlanListActivity.class));
+            }
+        });
 
         logout.setOnClickListener(new View.OnClickListener() {
             @Override

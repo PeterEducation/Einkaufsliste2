@@ -107,5 +107,21 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.616" />
+        app:layout_constraintVertical_bias="0.616"
+        />
+
+    <Button
+        android:id="@+id/goToList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#0ED6B9"
+        android:text="Geh Zur Liste"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.739" />
 </androidx.constraintlayout.widget.ConstraintLayout>

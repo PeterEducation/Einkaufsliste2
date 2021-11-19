@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ShoppingPlanActivity">
 
     <TextView
         android:id="@+id/banner"
@@ -36,13 +36,13 @@
         />
 
     <EditText
-        android:id="@+id/email"
+        android:id="@+id/shopName"
         android:layout_width="380dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="60dp"
         android:ems="10"
-        android:inputType="textEmailAddress"
-        android:hint="E-Mail Adresse"
+        android:inputType="text"
+        android:hint="Name des Ladens"
         android:textSize="24sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -51,33 +51,32 @@
         />
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/category"
         android:layout_width="380dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:ems="10"
-        android:inputType="textPassword"
-        android:hint="Passwort"
+        android:inputType="text"
+        android:hint="Name der Kategorie"
         android:textSize="24sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@+id/shopName"
         tools:layout_editor_absoluteX="16dp"
         />
 
     <Button
-        android:id="@+id/signIn"
-        android:layout_width="380dp"
-        android:layout_height="70dp"
-        android:textSize="24sp"
-        android:backgroundTint="#0ED6B9"
+        android:id="@+id/createShoppingPlan"
+        android:layout_width="375dp"
+        android:layout_height="88dp"
         android:layout_marginTop="24dp"
-        android:text="Einloggen"
+        android:backgroundTint="#0ED6B9"
+        android:text="Einkaufs Plan Erstellen"
         android:textColor="#ffffff"
+        android:textSize="24sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/password"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/category" />
 
     <ProgressBar
         android:id="@+id/progressBar"
@@ -92,25 +91,5 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         />
-
-    <TextView
-        android:id="@+id/forgotPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="72dp"
-        android:layout_marginBottom="256dp"
-        android:text="Passwort vergessen?"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <TextView
-        android:id="@+id/register"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="76dp"
-        android:layout_marginBottom="256dp"
-        android:text="Registrieren"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
