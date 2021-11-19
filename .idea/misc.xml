@@ -7,6 +7,8 @@
         <entry key="..\:/Users/petsch/AndroidStudioProjects/Einkaufsliste/app/src/main/res/layout/activity_planned_shoppings_list.xml" value="0.25" />
         <entry key="..\:/Users/petsch/AndroidStudioProjects/Einkaufsliste/app/src/main/res/layout/activity_profile.xml" value="0.5" />
         <entry key="..\:/Users/petsch/AndroidStudioProjects/Einkaufsliste/app/src/main/res/layout/activity_register_user.xml" value="0.33" />
+        <entry key="..\:/Users/petsch/AndroidStudioProjects/Einkaufsliste/app/src/main/res/layout/activity_shopping_plan_list.xml" value="0.1" />
+        <entry key="..\:/Users/petsch/AndroidStudioProjects/Einkaufsliste/app/src/main/res/layout/recycler_view_shopping_plan.xml" value="0.25" />
       </map>
     </option>
   </component>
